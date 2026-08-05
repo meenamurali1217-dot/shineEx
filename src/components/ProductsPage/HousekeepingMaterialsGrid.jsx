@@ -50,8 +50,8 @@ const getImageForItem = (name) => {
 const HousekeepingMaterialsGrid = ({ items }) => {
   return (
     <div className={styles.categorySection}>
-      <div className={styles.sectionHeader}>
-        <h3 className={styles.categoryTitle}>HOUSEKEEPING MATERIALS</h3>
+      <div style={{ textAlign: 'center', marginTop: '4rem', marginBottom: '2rem' }}>
+        <h3 className={styles.categoryTitle} style={{ fontSize: '1.8rem' }}>HOUSEKEEPING MATERIALS</h3>
       </div>
       
       <div className={styles.materialsGrid}>

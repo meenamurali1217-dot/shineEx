@@ -13,14 +13,9 @@
 }
 
 .imageColumn {
-  flex: 0 0 35%;
+  flex: 0 0 45%;
   position: relative;
   height: 250px;
-}
-
-.imageWrapper {
-  flex: 1;
-  max-width: 45%;
 }
 
 .imageWrapper {
@@ -32,7 +27,8 @@
 .productImg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .contentColumn {

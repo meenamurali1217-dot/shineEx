@@ -1,7 +1,7 @@
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import styles from './ProductHelpBanner.module.css';
-import productGroup from '../../assets/images/hero_products.jpg'; // Using existing group image
+import productGroup from '../../assets/images/product_group_new.png'; // Using new product group image
 
 const ProductHelpBanner = () => {
   return (

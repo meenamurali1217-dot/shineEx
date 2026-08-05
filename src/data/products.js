@@ -1,11 +1,19 @@
-import productBlue from '../assets/images/product_bottle_blue.jpg';
-import productPink from '../assets/images/product_bottle_pink.jpg';
-import product1 from '../assets/images/hero_product1.png';
-import product2 from '../assets/images/hero_product2.png';
-import product3 from '../assets/images/hero_product3.png';
-import product4 from '../assets/images/hero_product4.png';
-import product5 from '../assets/images/hero_product5.png';
-import product6 from '../assets/images/hero_product6.png';
+import imgFloorCleanerFloral from '../assets/images/floor_cleaner_floral.png';
+import imgFloorCleanerJasmine from '../assets/images/floor_cleaner_jasmine.png';
+import imgFloorCleanerCitrus from '../assets/images/floor_cleaner_citrus.png';
+import imgAirFreshenerFloral from '../assets/images/air_freshener_floral.png';
+import imgAirFreshenerLavender from '../assets/images/air_freshener_lavender.png';
+import imgHardSurfaceCleaner from '../assets/images/hard_surface_cleaner.png';
+import imgBathroomCleaner from '../assets/images/bathroom_cleaner.png';
+import imgGlassCleaner from '../assets/images/glass_multi_surface_cleaner.png';
+import imgToiletCleaner from '../assets/images/toilet_bowl_cleaner.png';
+import imgHandWash from '../assets/images/hand_wash_fresh_blossom.png';
+import imgStainlessSteelCleaner from '../assets/images/stainless_steel_cleaner.png';
+import imgPhenyl from '../assets/images/phenyl.png';
+import imgDishwashingLiquid from '../assets/images/dishwashing_liquid.png';
+import imgFabricConditioner from '../assets/images/fabric_conditioner.png';
+import imgDetergentLiquid from '../assets/images/detergent_liquid_5_ltr.png';
+import imgSoapOil from '../assets/images/soap_oil.png';
 import homeCareBottles from '../assets/images/home_care_bottles.jpg';
 import detergentLiquid500 from '../assets/images/detergent_liquid_500.png';
 import dishWash500 from '../assets/images/dish_wash_500.png';
@@ -17,47 +25,47 @@ export const productCategories = [
   {
     category: 'Floor Cleaners',
     items: [
-      { id: 1, name: 'Floor Cleaner (Floral)', quantity: '5 Ltr', image: product1 },
-      { id: 2, name: 'Floor Cleaner (Jasmine)', quantity: '5 Ltr', image: product2 },
-      { id: 3, name: 'Floor Cleaner (Citrus)', quantity: '5 Ltr', image: product3 }
+      { id: 1, name: 'Floor Cleaner (Floral)', quantity: '5 Ltr', image: imgFloorCleanerFloral },
+      { id: 2, name: 'Floor Cleaner (Jasmine)', quantity: '5 Ltr', image: imgFloorCleanerJasmine },
+      { id: 3, name: 'Floor Cleaner (Citrus)', quantity: '5 Ltr', image: imgFloorCleanerCitrus }
     ]
   },
   {
     category: 'Air Fresheners',
     items: [
-      { id: 4, name: 'Air Freshener (Floral)', quantity: '5 Ltr', image: product4 },
-      { id: 5, name: 'Air Freshener (Lavender)', quantity: '5 Ltr', image: product5 }
+      { id: 4, name: 'Air Freshener (Floral)', quantity: '5 Ltr', image: imgAirFreshenerFloral },
+      { id: 5, name: 'Air Freshener (Lavender)', quantity: '5 Ltr', image: imgAirFreshenerLavender }
     ]
   },
   {
     category: 'Surface Cleaners',
     items: [
-      { id: 6, name: 'Hard Surface Cleaner', quantity: '5 Ltr', image: product6 },
-      { id: 7, name: 'Bathroom Cleaner', quantity: '5 Ltr', image: productBlue },
-      { id: 8, name: 'Glass & Multi-Surface Cleaner', quantity: '5 Ltr', image: productBlue }
+      { id: 6, name: 'Hard Surface Cleaner', quantity: '5 Ltr', image: imgHardSurfaceCleaner },
+      { id: 7, name: 'Bathroom Cleaner', quantity: '5 Ltr', image: imgBathroomCleaner },
+      { id: 8, name: 'Glass & Multi-Surface Cleaner', quantity: '5 Ltr', image: imgGlassCleaner }
     ]
   },
   {
     category: 'Toilet Care',
     items: [
-      { id: 9, name: 'Disinfectant Toilet Bowl Cleaner', quantity: '5 Ltr', image: productBlue }
+      { id: 9, name: 'Disinfectant Toilet Bowl Cleaner', quantity: '5 Ltr', image: imgToiletCleaner }
     ]
   },
   {
     category: 'Personal Care',
     items: [
-      { id: 10, name: 'Hand Wash (Fresh Blossom)', quantity: '5 Ltr', image: productPink }
+      { id: 10, name: 'Hand Wash (Fresh Blossom)', quantity: '5 Ltr', image: imgHandWash }
     ]
   },
   {
     category: 'Specialty Products',
     items: [
-      { id: 11, name: 'Stainless Steel Cleaner', quantity: '500 ml', image: productBlue },
-      { id: 12, name: 'Phenyl', quantity: '5 Ltr', image: productPink },
-      { id: 13, name: 'Dishwashing Liquid', quantity: '1 Ltr', image: productBlue },
-      { id: 14, name: 'Fabric Conditioner', quantity: '5 Ltr', image: productPink },
-      { id: 15, name: 'Detergent Liquid', quantity: '5 Ltr', image: productBlue },
-      { id: 16, name: 'Soap Oil', quantity: '1 Ltr', image: productBlue }
+      { id: 11, name: 'Stainless Steel Cleaner', quantity: '500 ml', image: imgStainlessSteelCleaner },
+      { id: 12, name: 'Phenyl', quantity: '5 Ltr', image: imgPhenyl },
+      { id: 13, name: 'Dishwashing Liquid', quantity: '1 Ltr', image: imgDishwashingLiquid },
+      { id: 14, name: 'Fabric Conditioner', quantity: '5 Ltr', image: imgFabricConditioner },
+      { id: 15, name: 'Detergent Liquid', quantity: '5 Ltr', image: imgDetergentLiquid },
+      { id: 16, name: 'Soap Oil', quantity: '1 Ltr', image: imgSoapOil }
     ]
   },
   {

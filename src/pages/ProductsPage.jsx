@@ -18,6 +18,10 @@ const ProductsPage = () => {
         
         <section className="py-20 bg-white">
           <div className="container">
+            <div style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '3rem' }}>
+              <h2 style={{ fontSize: '2.2rem', fontWeight: '800', color: 'var(--primary-color)', textTransform: 'uppercase' }}>Our Products</h2>
+            </div>
+            
             <div className={categoryStyles.productGrid}>
               {productCategories
                 .filter(c => c.category !== 'Home Care (500ml & 1000ml)')
@@ -31,10 +35,10 @@ const ProductsPage = () => {
             </div>
             
             <div className="mt-16">
-              <div className={categoryStyles.sectionHeader}>
-                <h3 className={categoryStyles.categoryTitle}>HOME CARE (500ML & 1000ML)</h3>
+              <div style={{ textAlign: 'center', marginTop: '4rem', marginBottom: '2rem' }}>
+                <h3 className={categoryStyles.categoryTitle} style={{ fontSize: '1.8rem' }}>HOME CARE (500ML & 1000ML)</h3>
               </div>
-              <div className={categoryStyles.productGrid}>
+              <div className={categoryStyles.productGrid6Cols}>
                 {productCategories
                   .filter(c => c.category === 'Home Care (500ml & 1000ml)')
                   .map((categoryData, index) => (
