@@ -1,0 +1,182 @@
+.whyChooseSection {
+  padding: 100px 0;
+  background-color: var(--bg-light);
+}
+
+.whyContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.imageColumn {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.interiorImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .interiorImage {
+  transform: scale(1.05);
+}
+
+.trustBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.badgeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.badgeText {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.3;
+}
+
+.badgeUsers {
+  display: flex;
+  justify-content: center;
+}
+
+.userIcon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+}
+
+.userIcon:first-child {
+  margin-left: 0;
+}
+
+.contentColumn {
+  padding-left: 20px;
+}
+
+.label {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.benefitItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.iconContainer {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 1px solid rgba(11, 80, 196, 0.1);
+}
+
+.benefitTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.benefitDescription {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.btnIcon {
+  margin-left: 8px;
+}
+
+@media (max-width: 992px) {
+  .whyContainer {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+  
+  .contentColumn {
+    padding-left: 0;
+  }
+  
+  .trustBadge {
+    right: 20px;
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trustBadge {
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+  }
+  
+  .badgeText {
+    font-size: 0.75rem;
+  }
+}

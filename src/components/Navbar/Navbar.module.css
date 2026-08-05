@@ -1,0 +1,143 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+  padding: 15px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.logoSwoosh {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border: 4px solid white;
+  border-radius: 50%;
+  top: -20%;
+  left: -20%;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.activeLink {
+  color: var(--primary-color);
+}
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.desktopCta {
+  gap: 8px;
+}
+
+.navLinks .mobileCta {
+  display: none;
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .navLinks {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 24px;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .navLinks.active {
+    transform: translateY(0);
+  }
+
+  .desktopCta {
+    display: none;
+  }
+
+  .navLinks .mobileCta {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .mobileMenuBtn {
+    display: block;
+  }
+}

@@ -1,0 +1,109 @@
+.ctaSection {
+  padding: 40px 0;
+  background-color: var(--bg-light);
+}
+
+.ctaContainer {
+  background: var(--primary-color);
+  border-radius: var(--border-radius-md);
+  padding: 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-md);
+  color: white;
+}
+
+.ctaLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.ctaRight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.phoneIcon {
+  font-size: 1.25rem;
+  opacity: 1;
+}
+
+.phoneDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneLabel {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin-bottom: 2px;
+}
+
+.phoneNumber {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.contactBtn {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 24px;
+}
+
+.contactBtn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .ctaContainer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .ctaLeft {
+    flex-direction: column;
+  }
+  
+  .ctaRight {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

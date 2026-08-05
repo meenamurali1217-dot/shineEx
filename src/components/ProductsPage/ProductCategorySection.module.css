@@ -1,0 +1,164 @@
+.categorySection {
+  flex: 0 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.categoryTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.viewAll {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.viewAll:hover {
+  text-decoration: underline;
+}
+
+.productGrid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  width: 190px;
+  max-width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: var(--border-radius-md);
+  padding: 16px;
+  background-color: white;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.productCard:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(11, 80, 196, 0.2);
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.productImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  gap: 10px;
+}
+
+.productName {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.productQuantity {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-gray);
+  white-space: nowrap;
+}
+
+/* Available Sizes Card Styles */
+.sizesCard {
+  background-color: #f8faff;
+  border-color: #e5edff;
+}
+
+.sizesTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sizesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sizesList li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sizeIconWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizeBottle {
+  width: 16px;
+  height: 24px;
+  border-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.sizesList span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    gap: 12px;
+  }
+  
+  .productCard {
+    width: calc(50% - 6px);
+    padding: 12px;
+  }
+  
+  .imageContainer {
+    height: 120px;
+  }
+  
+  .productName {
+    font-size: 0.8rem;
+  }
+  
+  .productQuantity {
+    font-size: 0.75rem;
+  }
+}

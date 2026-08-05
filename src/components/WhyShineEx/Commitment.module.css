@@ -1,0 +1,142 @@
+.commitmentSection {
+  padding: 60px 0 100px 0;
+  background-color: white;
+}
+
+.commitmentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contentColumn {
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+.textContent {
+  margin-bottom: 30px;
+}
+
+.textContent p {
+  font-size: 1rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkIcon {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checklist li span {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.imageColumn {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  height: 400px;
+}
+
+.leafImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.badgeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.badgeText {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.3;
+}
+
+.badgeStars {
+  color: var(--primary-color);
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 992px) {
+  .commitmentContainer {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .contentColumn {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .badge {
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+  }
+  
+  .badgeText {
+    font-size: 0.75rem;
+  }
+}

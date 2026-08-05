@@ -1,0 +1,132 @@
+.productsHeroSection {
+  padding: 140px 0 80px 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.content {
+  max-width: 600px;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+.description {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.iconContainer {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 4px;
+}
+
+.featureItem h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.featureItem p {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.3;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.productImg {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 992px) {
+  .productsHeroSection {
+    background: var(--bg-gradient) !important;
+    min-height: auto;
+    padding-bottom: 60px;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .content {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .features {
+    justify-content: center;
+  }
+  
+  .featureItem {
+    align-items: center;
+  }
+  
+  .imageContainer {
+    justify-content: center;
+  }
+}
