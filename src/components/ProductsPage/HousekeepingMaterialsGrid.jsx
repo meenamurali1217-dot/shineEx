@@ -1,28 +1,50 @@
-import hkDustCob from '../../assets/images/housekeeping/hk_dust_cob.jpg';
-import hkRoundMop from '../../assets/images/housekeeping/hk_round_mop.jpg';
-import hkDustPan from '../../assets/images/housekeeping/hk_dust_pan.jpg';
-import hkMop from '../../assets/images/housekeeping/hk_mop.jpg';
-import hkUrinalCake from '../../assets/images/housekeeping/hk_urinal_cake.jpg';
-import hkWiper from '../../assets/images/housekeeping/hk_wiper.jpg';
-import hkBrush from '../../assets/images/housekeeping/hk_brush.jpg';
-import hkToiletBrush from '../../assets/images/housekeeping/hk_toilet_brush.jpg';
-import hkSpray from '../../assets/images/housekeeping/hk_spray.jpg';
-import hkBalls from '../../assets/images/housekeeping/hk_balls.jpg';
+import imgAirFreshenerSpray from '../../assets/images/housekeeping/air_freshener_spray.png';
+import imgDryMop from '../../assets/images/housekeeping/dry_mop.png';
+import imgDustCobWithStick from '../../assets/images/housekeeping/dust_cob_with_stick.png';
+import imgDustPanWithBroom from '../../assets/images/housekeeping/dust_pan_with_broom.png';
+import imgElectronicRoomFreshener from '../../assets/images/housekeeping/electronic_room_freshener.png';
+import imgGarbageCovers from '../../assets/images/housekeeping/garbage_covers.png';
+import imgHandAndSoftBrush from '../../assets/images/housekeeping/hand_and_soft_brush.png';
+import imgHardBroom from '../../assets/images/housekeeping/hard_broom.png';
+import imgMagicMopWithBucket from '../../assets/images/housekeeping/magic_mop_with_bucket.png';
+import imgMopWithStick from '../../assets/images/housekeeping/mop_with_stick.png';
+import imgNaphthaleneBalls from '../../assets/images/housekeeping/naphthalene_balls.png';
+import imgOdonilAirFreshener from '../../assets/images/housekeeping/odonil_air_freshener.png';
+import imgRoadBrush from '../../assets/images/housekeeping/road_brush.png';
+import imgRoundMopWithStick from '../../assets/images/housekeeping/round_mop_with_stick.png';
+import imgSoftBroom from '../../assets/images/housekeeping/soft_broom.png';
+import imgSpongeMop from '../../assets/images/housekeeping/sponge_mop.png';
+import imgSqueezerWiper from '../../assets/images/housekeeping/squeezer_wiper.png';
+import imgToiletBrushes from '../../assets/images/housekeeping/toilet_brushes.png';
+import imgUrinalCakeAndPad from '../../assets/images/housekeeping/urinal_cake_and_pad.png';
+import imgWiper from '../../assets/images/housekeeping/wiper.png';
 import styles from './HousekeepingMaterialsGrid.module.css';
 
+const imageMap = {
+  'Air Freshener Spray': imgAirFreshenerSpray,
+  'Dry Mop': imgDryMop,
+  'Dust Cob with Stick': imgDustCobWithStick,
+  'Dust Pan with Broom': imgDustPanWithBroom,
+  'Electronic Room Freshener': imgElectronicRoomFreshener,
+  'Garbage Covers': imgGarbageCovers,
+  'Hand & Soft Brush': imgHandAndSoftBrush,
+  'Hard Broom': imgHardBroom,
+  'Magic Mop with Bucket': imgMagicMopWithBucket,
+  'Mop with Stick': imgMopWithStick,
+  'Naphthalene Balls': imgNaphthaleneBalls,
+  'Odonil Air Freshener': imgOdonilAirFreshener,
+  'Road Brush': imgRoadBrush,
+  'Round Mop with Stick': imgRoundMopWithStick,
+  'Soft Broom': imgSoftBroom,
+  'Sponge Mop': imgSpongeMop,
+  'Squeezer Wiper': imgSqueezerWiper,
+  'Toilet Brushes': imgToiletBrushes,
+  'Urinal Cake & Pad': imgUrinalCakeAndPad,
+  'Wiper': imgWiper,
+};
+
 const getImageForItem = (name) => {
-  const n = name.toLowerCase();
-  if (n.includes('dust cob')) return hkDustCob;
-  if (n.includes('round mop') || n.includes('sponge mop') || n.includes('magic mop')) return hkRoundMop;
-  if (n.includes('dust pan')) return hkDustPan;
-  if (n.includes('mop')) return hkMop;
-  if (n.includes('urinal')) return hkUrinalCake;
-  if (n.includes('wiper')) return hkWiper;
-  if (n.includes('brush') && !n.includes('toilet')) return hkBrush;
-  if (n.includes('toilet')) return hkToiletBrush;
-  if (n.includes('freshener')) return hkSpray;
-  if (n.includes('balls') || n.includes('covers')) return hkBalls;
-  return hkMop;
+  return imageMap[name] || imgMopWithStick;
 };
 
 const HousekeepingMaterialsGrid = ({ items }) => {
