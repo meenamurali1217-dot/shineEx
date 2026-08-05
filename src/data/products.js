@@ -7,6 +7,12 @@ import product4 from '../assets/images/hero_product4.png';
 import product5 from '../assets/images/hero_product5.png';
 import product6 from '../assets/images/hero_product6.png';
 import homeCareBottles from '../assets/images/home_care_bottles.jpg';
+import detergentLiquid500 from '../assets/images/detergent_liquid_500.png';
+import dishWash500 from '../assets/images/dish_wash_500.png';
+import floorCleaner500 from '../assets/images/floor_cleaner_500.png';
+import toiletCleaner500 from '../assets/images/toilet_cleaner_500.png';
+import floorCleanerOrganic500 from '../assets/images/floor_cleaner_organic_500.png';
+
 export const productCategories = [
   {
     category: 'Floor Cleaners',
@@ -57,11 +63,11 @@ export const productCategories = [
   {
     category: 'Home Care (500ml & 1000ml)',
     items: [
-      { id: 17, name: 'Detergent Liquid', quantity: '(500ml & 1000ml)', image: homeCareBottles },
-      { id: 18, name: 'Floor Cleaner', quantity: '(500ml & 1000ml)', image: homeCareBottles },
-      { id: 19, name: 'Dish Wash', quantity: '(500ml & 1000ml)', image: homeCareBottles },
-      { id: 20, name: 'Toilet Cleaner', quantity: '(500ml & 1000ml)', image: homeCareBottles },
-      { id: 21, name: 'Floor Cleaner (Herbal)', quantity: '(500ml & 1000ml)', image: homeCareBottles }
+      { id: 17, name: 'Detergent Liquid', quantity: '(500ml & 1000ml)', image: detergentLiquid500 },
+      { id: 18, name: 'Floor Cleaner', quantity: '(500ml & 1000ml)', image: floorCleaner500 },
+      { id: 19, name: 'Dish Wash', quantity: '(500ml & 1000ml)', image: dishWash500 },
+      { id: 20, name: 'Toilet Cleaner', quantity: '(500ml & 1000ml)', image: toiletCleaner500 },
+      { id: 21, name: 'Floor Cleaner (Herbal)', quantity: '(500ml & 1000ml)', image: floorCleanerOrganic500 }
     ]
   }
 ];
